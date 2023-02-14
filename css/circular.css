@@ -1,0 +1,279 @@
+
+.circular_container {
+    display: flex;
+    flex-direction: column;
+    background: #042c54;
+    border-radius: 1rem;
+    gap: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.circular_top {
+    text-align: left;
+    margin-right: auto;
+}
+
+.circular_image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0rem 0.1rem;
+    margin-top: 0.1rem;
+}
+
+.circular_image img {
+    height: 20rem;
+}
+
+.circular_info {
+    color: aliceblue;
+    line-height: 1.5;
+    padding: 1.5rem;
+    background: var(--color-footer);
+    border-radius: 1rem;
+}
+
+.circular {
+    margin: 2rem 2rem;
+}
+
+.circular p {
+    margin-top: 1.5rem;
+}
+
+.circular_btn {
+    align-items: center;
+    padding: 2rem;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+.container{
+    width: var(--container-width-md);
+    align-items: center;
+}
+
+    .update_container {
+        margin-top: 0.5rem;
+        margin-bottom: -3rem;
+        
+    }
+
+    .update_container .update_content h3 {
+        font-size: 1rem;
+    }
+
+    .update_container .update_content p {
+        font-size: 1rem;
+    }
+
+    .update_container .update_btn a {
+        font-size: 1rem;
+    }
+
+    .update_container .update_content {
+        padding: 0.6rem;
+    }
+    
+
+
+
+
+
+
+    .circular_container .circular_top h1{
+        font-size: 1rem;
+    }
+    
+    .circular_container .circular_top {
+        margin-bottom: -1rem;
+    }
+
+    .circular_container .circular_top h2{
+        font-size: 1rem;
+    }
+
+    .circular_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0rem 0rem;
+
+    }
+    
+    .circular_container p {
+        font-size: 1rem;
+    }
+
+    .circular_container h2 {
+        font-size: 1rem;
+        text-decoration: underline;
+    }
+
+    .circular_image-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 0.5rem;
+        padding: 0rem;
+        width: 100%;
+        margin-left: -1rem;
+     }
+
+     .circular_btn {
+        margin-top: -1rem;
+     }
+
+     .circular_info {
+        width: 100%;
+        margin: 0.5rem 0.5rem;
+     }
+
+
+
+
+
+
+
+    /*footer*/
+    .footer_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .footer_container p {
+        font-size: 0.8rem;
+    }
+
+    .footer_container a {
+        font-size: 0.8rem;
+    }
+
+    .footer_1 {
+
+        text-align: left;
+        margin-bottom: 1.2rem;
+        margin: 1rem -2rem;
+    }
+
+    .footer_socials {
+        justify-content: center;
+
+    }
+
+    .footer_1 h4 {
+        font-size: 0.8rem;
+    }
+
+    .footer_copyright small {
+        font-size: 0.8rem;
+    }
+
+
+
+
+}
+
+
+
+
+/* --------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+  
+
+    .circular_container .circular_top h1{
+        font-size: 1rem;
+    }
+    
+    .circular_container .circular_top {
+        margin-bottom: -1rem;
+    }
+
+    .circular_container .circular_top h2{
+        font-size: 1rem;
+    }
+
+    .circular_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1rem 1rem;
+
+    }
+    
+    .circular_container p {
+        font-size: 1rem;
+    }
+
+    .circular_container h2 {
+        font-size: 1rem;
+        text-decoration: underline;
+    }
+
+    .circular_image-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 0.5rem;
+     }
+
+     .circular_btn {
+        margin-top: -1rem;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .update_container {
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        margin-top: 0.1rem;
+    }
+
+    .update_container .update_content h3 {
+        font-size: 0.8rem;
+    }
+
+    .update_container .update_content p {
+        font-size: 0.8rem;
+    }
+
+    .update_container .update_btn a {
+        font-size: 0.7rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

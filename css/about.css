@@ -1,0 +1,1132 @@
+
+:root {
+    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+
+    --color-bg: #040C18;
+    --color-footer: #031B34;
+    --color-blog: #042c54;
+    --color-text: #81AFDD;
+    --color-subtext: #FF8A71;
+
+
+
+    /*  variables for page sizes for pcs, tablets,and phones */
+
+    --container-width-lg: 90%;
+    --container-width-md: 94%;
+    --container-width-sm: 94%;
+
+    /*  variables for transitions */
+
+    --transition: all 0.8s ease;
+}
+
+
+
+
+.container {
+    width: var(--container-width-lg);
+}
+
+.team {
+        /* ff 3.6+ */
+        background: -moz-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+        /* safari 5.1+,chrome 10+ */
+        background: -webkit-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* opera 11.10+ */
+        background: -o-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* ie 10+ */
+        background: -ms-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* global 92%+ browsers support */
+        background: radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+}
+
+
+
+.team_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 3rem;
+    
+}
+
+.team_header{
+    padding-top: 2rem;
+    margin-left: 5rem;
+    padding-bottom: -2rem;
+}
+.team_member {
+    background: var(--color-text);
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team_member:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+
+}
+.team_member-image img {
+    filter: saturate(0);
+    height: 100%;
+    width: 100%;
+}
+
+.team_member:hover img {
+    filter: saturate(1);
+}
+
+.team_member-info * {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.team_member-info p {
+    color:aliceblue;
+}
+.team_member-socials {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--gradient-bar);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgb(0, 0, 0, 0.3);
+    transition: var(--transition);
+
+}
+.team_member:hover .team_member-socials{
+    right: 0%;
+}
+
+.team_member-socials a {
+    padding: 1rem;
+}
+
+
+
+.purpose_container {
+    align-items: center;
+    padding: 2rem 5rem;
+    border-radius: 5rem;
+    margin-bottom: 5rem;
+    margin-top: 0.5rem;
+
+
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+
+}
+
+
+.purpose_catch-header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20rem;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+}
+
+.purpose_features-container {
+    display: flex;
+}
+
+.purpose {
+    background: var(--color-blog);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.purpose:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+.purpose h1 {
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+.purpose p {
+    color: aliceblue;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.purpose_catch-header p {
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.purpose_container h1 {
+    color: aliceblue;
+}
+
+
+
+
+
+
+.mission_container {
+    align-items: center;
+    padding: 2rem 5rem;
+    border-radius: 5rem;
+    margin-bottom: 5rem;
+    margin-top: 0.5rem;
+
+
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+
+}
+
+
+
+
+
+
+
+.mission_catch-header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20rem;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+}
+
+.mission_features-container {
+    display: flex;
+}
+
+.mission {
+    background: var(--color-blog);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.mission:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+.mission h1 {
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+.mission p {
+    color: aliceblue;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.mission_catch-header p {
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.mission_container h1 {
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+.vision_container {
+    align-items: center;
+    padding: 2rem 5rem;
+    border-radius: 5rem;
+    margin-bottom: 5rem;
+    margin-top: 0.5rem;
+
+
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+
+}
+
+.vision_catch-header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20rem;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+}
+
+.vision_features-container {
+    display: flex;
+}
+
+.vision {
+    background: var(--color-blog);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.vision:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+.vision h1 {
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+.vision p {
+    color: aliceblue;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.vision_catch-header p {
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.vision_container h1 {
+    color: aliceblue;
+}
+
+
+
+.update_container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: var(--gradient-bar);
+}
+
+.update_container p {
+    font-size: 1.2rem;
+}
+
+.update_container h3 {
+    font-size: 1.3rem;
+}
+
+.update_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.update_btn {
+    background: black;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    color: black;
+    line-height: 3rem;
+    padding: 0.5rem 0.4rem;
+    font-weight: bold;
+
+    outline: #AE67FA;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    
+.container {
+    width: var(--container-width-md);
+}
+
+
+.socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 1rem 6rem;
+    color: var(--color-text);
+    gap: 0.1rem;
+    margin: 0rem 1rem;
+}
+
+.socials li a {
+    font-size: 1rem;
+}
+
+
+.team_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 3rem;
+    
+}
+
+
+.team_header{
+    padding-top: 1rem;
+    margin-left: 5rem;
+    padding-bottom: -2rem;
+}
+.team_member {
+    background: var(--color-text);
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team_member:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+
+}
+.team_member-image img {
+    filter: saturate(0);
+    height: 100%;
+    width: 100%;
+}
+
+.team_member:hover img {
+    filter: saturate(1);
+}
+
+.team_member-info * {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.team_member-info p {
+    color:aliceblue;
+    font-size: 1rem;
+}
+
+.team_member-info h4{
+    font-size: 1rem;
+}
+
+.team_member-socials {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--gradient-bar);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgb(0, 0, 0, 0.3);
+    transition: var(--transition);
+
+}
+.team_member:hover .team_member-socials{
+    right: 0%;
+}
+
+.team_member-socials a {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+
+.about_header h1{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+.purpose_catch-header h1 {
+    font-size: 1rem;
+}
+
+.purpose_container {
+    align-items: center;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+    margin-top: 0.5rem;
+
+
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+
+}
+
+
+.purpose_catch-header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.purpose_features-container {
+    display: flex;
+}
+
+.purpose {
+    background: var(--color-blog);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.purpose:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+.purpose h1 {
+    color: antiquewhite;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.purpose p {
+    color: aliceblue;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.purpose_catch-header p {
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.purpose_container h1 {
+    color: aliceblue;
+}
+
+
+
+
+
+.mission_container {
+    align-items: center;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+
+
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+
+}
+
+
+
+
+
+
+
+.mission_catch-header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.mission_features-container {
+    display: flex;
+}
+
+.mission {
+    background: var(--color-blog);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.mission:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+.mission h1 {
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+.mission p {
+    color: aliceblue;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.mission_catch-header p {
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.mission_container h1 {
+    color: aliceblue;
+}
+
+
+
+.vision_catch-header h1 {
+    font-size: 1rem;
+}
+
+.vision_container {
+    align-items: center;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+    margin-top: 0.5rem;
+
+
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+
+}
+
+
+.vision_catch-header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.vision_features-container {
+    display: flex;
+}
+
+.vision {
+    background: var(--color-blog);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.vision:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+.vision h1 {
+    color: antiquewhite;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.vision p {
+    color: aliceblue;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.vision_catch-header p {
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.vision_container h1 {
+    color: aliceblue;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+
+
+    .container {
+        width: var(--container-width-sm);
+    }
+    
+    
+
+    
+    .socials {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        color: var(--color-text);
+        gap: 1rem;
+        padding: 1rem 1rem;
+        margin: 0.1rem 1rem;
+    }
+
+    .socials li a {
+        font-size: 0.8rem;
+    }
+
+   
+    .team_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        
+    }
+    
+    
+    .team_header{
+        padding-top: 1rem;
+        margin-left: 5rem;
+        padding-bottom: -2rem;
+    }
+    .team_member {
+        background: var(--color-text);
+        padding: 1rem;
+        border: 1px solid transparent;
+        border-radius: 1rem;
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .team_member:hover{
+        background: transparent;
+        border-color: var(--color-primary);
+    
+    }
+    .team_member-image img {
+        filter: saturate(0);
+        height: 100%;
+        width: 100%;
+    }
+    
+    .team_member:hover img {
+        filter: saturate(1);
+    }
+    
+    .team_member-info * {
+        text-align: center;
+        margin-top: 0.5rem;
+        
+    }
+    
+    .team_member-info p {
+        color:aliceblue;
+        font-size: 1rem;
+        padding: 0rem;
+    }
+    
+    .team_member-info h4{
+        font-size: 1rem;
+    }
+    
+    .team_member-socials {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        background: var(--gradient-bar);
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: -2rem 0 2rem rgb(0, 0, 0, 0.3);
+        transition: var(--transition);
+    
+    }
+    .team_member:hover .team_member-socials{
+        right: 0%;
+    }
+    
+    .team_member-socials a {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    
+    
+    .about_header h1{
+        font-size: 1rem;
+    }
+    
+    
+    
+    
+    
+    
+    .purpose_catch-header h1 {
+        font-size: 1rem;
+    }
+    
+    .purpose_container {
+        align-items: center;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        margin-bottom: 5rem;
+        margin-top: 0.5rem;
+    
+    
+        /* ff 3.6+ */
+        background: -moz-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* safari 5.1+,chrome 10+ */
+        background: -webkit-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* opera 11.10+ */
+        background: -o-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* ie 10+ */
+        background: -ms-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* global 92%+ browsers support */
+        background: radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+    
+    }
+    
+    
+    .purpose_catch-header {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2rem;
+        align-items: flex-start;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .purpose_features-container {
+        display: flex;
+    }
+    
+    .purpose {
+        background: var(--color-blog);
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        transition: var(--transition);
+    }
+    
+    .purpose:hover {
+        box-shadow: 0 3rem 3rem rgba(0, 0, 0, 1);
+        z-index: 1;
+    }
+    
+    .purpose h1 {
+        color: antiquewhite;
+        text-decoration: underline;
+        font-size: 1rem;
+    }
+    
+    .purpose p {
+        color: aliceblue;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .purpose_catch-header p {
+        color: aliceblue;
+        font-size: 0.7rem;
+    }
+    
+    .purpose_container h1 {
+        color: aliceblue;
+    }
+    
+    
+    
+    
+    
+    .mission_container {
+        align-items: center;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    
+    
+        /* ff 3.6+ */
+        background: -moz-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* safari 5.1+,chrome 10+ */
+        background: -webkit-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* opera 11.10+ */
+        background: -o-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* ie 10+ */
+        background: -ms-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* global 92%+ browsers support */
+        background: radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    .mission_catch-header {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2rem;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+    
+    .mission_features-container {
+        display: flex;
+    }
+    
+    .mission {
+        background: var(--color-blog);
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        transition: var(--transition);
+    }
+    
+    .mission:hover {
+        box-shadow: 0 3rem 3rem rgba(0, 0, 0, 1);
+        z-index: 1;
+    }
+    
+    .mission h1 {
+        color: antiquewhite;
+        text-decoration: underline;
+    }
+    
+    .mission p {
+        color: aliceblue;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .mission_catch-header p {
+        color: aliceblue;
+        font-size: 0.7rem;
+    }
+    
+    .mission_container h1 {
+        color: aliceblue;
+    }
+    
+    
+    
+    .vision_catch-header h1 {
+        font-size: 1rem;
+    }
+    
+    .vision_container {
+        align-items: center;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        margin-bottom: 5rem;
+        margin-top: 0.5rem;
+    
+    
+        /* ff 3.6+ */
+        background: -moz-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* safari 5.1+,chrome 10+ */
+        background: -webkit-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* opera 11.10+ */
+        background: -o-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* ie 10+ */
+        background: -ms-radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* global 92%+ browsers support */
+        background: radial-gradient(circle at 3% 15%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+    
+    }
+    
+    
+    .vision_catch-header {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2rem;
+        align-items: flex-start;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .vision_features-container {
+        display: flex;
+    }
+    
+    .vision {
+        background: var(--color-blog);
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        transition: var(--transition);
+    }
+    
+    .vision:hover {
+        box-shadow: 0 3rem 3rem rgba(0, 0, 0, 1);
+        z-index: 1;
+    }
+    
+    .vision h1 {
+        color: antiquewhite;
+        text-decoration: underline;
+        font-size: 1rem;
+    }
+    
+    .vision p {
+        color: aliceblue;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .vision_catch-header p {
+        color: aliceblue;
+        font-size: 0.7rem;
+    }
+    
+    .vision_container h1 {
+        color: aliceblue;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
